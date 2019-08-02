@@ -141,6 +141,14 @@
 //-----SECTION-BUILDING----\\
 
 .building{
+  &.golden{
+    .building__block{
+      background: #FFC15E;
+      box-shadow: 0 4px 20px rgba(207, 164, 97, 0.862);
+      color: #1b130f;
+      top: -300px;
+    }
+  }
   &__block{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -205,6 +213,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-bottom: 316px;
   &:before{
     content: '';
     background-image: url(../images/home.png);
@@ -216,8 +225,10 @@
   &__advantage{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 110px;
     p{
       font-family: 'Playfair Display', serif;
       font-style: normal;
@@ -233,7 +244,7 @@
     }
   }
   &__title{
-    text-shadow: 0px 4px 20px rgba(207, 164, 97, 0.862);
+    text-shadow: 0 4px 20px rgba(207, 164, 97, 0.862);
     color: #B86020;
     font-family: 'Playfair Display', serif;
     font-style: normal;
@@ -241,13 +252,13 @@
     font-size: 48px;
     line-height: 64px;
     letter-spacing: 0.05em;
-    margin-right: 16px;
     span{
       font-family: 'Roboto', sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 130px;
       line-height: 152px;
+      margin-right: 16px;
     }
   }
 
