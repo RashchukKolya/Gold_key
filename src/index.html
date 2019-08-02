@@ -10,6 +10,8 @@
   <link
     href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
     rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -110,6 +112,34 @@
       </div>
     </section>
   </div>
+
+  <h2 class="form-title gallery_title">Галерея</h2>
+  <section class="gallery">
+
+    <div class="gallery__list">
+      <div class="gallery__item">
+        <img src="./images/DJI_0065.jpg" alt="">
+      </div>
+      <div class="gallery__item">
+        <img src="./images/DJI_0065.jpg" alt="">
+      </div>
+      <div class="gallery__item">
+        <img src="./images/DJI_0065.jpg" alt="">
+      </div>
+      <div class="gallery__item">
+        <img src="./images/DJI_0065.jpg" alt="">
+      </div>
+      <div class="gallery__item">
+        <img src="./images/DJI_0065.jpg" alt="">
+      </div>
+    </div>
+    <div class="container">
+      <div class="gallery__nav">
+        <img src="./images/Polygon.png" alt="" class="left">
+        <img src="./images/Polygon.png" alt="" class="right">
+      </div>
+    </div>
+  </section>
   <section class="communications">
     <div class="container">
       <h3 class="comm-title">Новые сети коммуникации</h3>
@@ -169,6 +199,28 @@
       </div>
     </div>
   </footer>
+  <script>
+    $(document).ready(function () {
+      var clickerHome = false;
+      $('.gallery__nav .left').on("click", function () {
+        if (clickerHome) return;
+        clickerHome = true;
+        let element = $('.gallery__list>div:last-child');
+        $(element).css('margin-left', '-' + element.css("width")).prependTo('.gallery__list').animate({ 'margin-left': '0%' }, 1000, function () {
+          clickerHome = false;
+        });
+      })
+      $('.gallery__nav .right').on("click", function () {
+        if (clickerHome) return;
+        clickerHome = true;
+        let element = $('.gallery__list>div:nth-child(1)');
+        $(element).animate({ 'margin-left': '-' + element.css("width") }, 1000, function () {
+          $(this).appendTo('.gallery__list').css('margin-left', '0%');
+          clickerHome = false;
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
