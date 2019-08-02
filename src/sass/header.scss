@@ -1,5 +1,9 @@
 //----HEADER----\\
 
+input{
+  outline: none;
+}
+
 .header {
   background-image: url(../images/DSC04437.png);
   background-size: cover;
@@ -83,7 +87,7 @@
 //-------COMMUNICATIONS-------\\
 
 .communications {
-  background: #e5e5e5;
+  background: #fff;
 }
 
 .comm-title {
@@ -125,6 +129,10 @@
 .section-form {
   position: relative;
   overflow: hidden;
+  .container{
+    position: relative;
+    z-index: 3;
+  }
 }
 
 .section-form .rgba {
