@@ -79,6 +79,38 @@
   line-height: 21px;
   margin-left: 10px;
 }
+//-------COMMUNICATIONS-------\\
+
+.communications {
+  background: #e5e5e5;
+}
+
+.comm-tit {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 53px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.comm-list {
+  display: flex;
+}
+
+.comm-list-item {
+  width: 175px;
+}
+
+.item-text {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+}
 
 //-----SECTION-BUILDING----\\
 
@@ -210,18 +242,62 @@
 //-----SECTION-FORM----\\
 
 .section-form {
-  background: linear-gradient(rgba(32, 23, 89, 0.38),  rgba(32, 23, 89, 0.38)), url(../images/DSC04436.png);
+  background: linear-gradient(rgba(32, 23, 89, 0.38), rgba(32, 23, 89, 0.38)),
+    url(../images/DSC04436.png);
   background-size: cover;
-  padding: 380px 0;
+  padding: 19px 0 143px;
+  color: #fff;
+  text-align: center;
   // filter: blur(5px);
+}
+
+.form-logo {
+  margin-bottom: 156px;
+}
+
+.form-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 53px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.form-subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  width: 662px;
+  margin: 40px auto;
+}
+
+.form-input {
+  width: 300px;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 65px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.form-input:first-child {
+  margin-right: 60px;
+}
+
+.form-btn {
+  width: 164px;
+  margin: 52px auto 0;
 }
 
 //------GOOGLE-NAV-------\\
 
-.google-nav {
-  background-image: url(../images/image.png);
-  background-size: cover;
-  padding: 266px 0;
+.iframe {
+  width: 100%;
+  display: block;
 }
 
 //------FOOTER------\\
