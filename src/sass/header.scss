@@ -209,12 +209,13 @@
 
 //-----SECTION-HOME----\\
 
-.section-home{
+.section-home {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 316px;
-  &:before{
+
+  &:before {
     content: '';
     background-image: url(../images/home.png);
     width: 744px;
@@ -222,14 +223,16 @@
     background-size: contain;
     position: absolute;
   }
-  &__advantage{
+
+  &__advantage {
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: flex-end;
     align-items: flex-end;
     margin-bottom: 110px;
-    p{
+
+    p {
       font-family: 'Playfair Display', serif;
       font-style: normal;
       font-weight: bold;
@@ -243,7 +246,8 @@
       text-shadow: none;
     }
   }
-  &__title{
+
+  &__title {
     text-shadow: 0 4px 20px rgba(207, 164, 97, 0.862);
     color: #B86020;
     font-family: 'Playfair Display', serif;
@@ -252,7 +256,8 @@
     font-size: 48px;
     line-height: 64px;
     letter-spacing: 0.05em;
-    span{
+
+    span {
       font-family: 'Roboto', sans-serif;
       font-style: normal;
       font-weight: bold;
@@ -266,30 +271,32 @@
     position: relative;
     z-index: 2;
   }
-  
-  .communication-text {
-    position: relative;
-    width: 672px;
-    height: 265px;
-    background-color: #000;
-    color: #fff;
-    z-index: 1000;
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 23px;
-    padding: 64px 62px;
-    margin: 0 0 -180px auto;
+}
+.communication-text {
+  position: relative;
+  width: 672px;
+  height: 265px;
+  background-color: #000;
+  color: #fff;
+  z-index: 1000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 64px 62px;
+  margin: 0 0 -180px auto;
 }
 
 
 //-----SECTION-FORM----\\
 
 .section-form {
+  background: linear-gradient(rgba(32, 23, 89, 0.38), rgba(32, 23, 89, 0.38)),
+  url(../images/DSC04436.png);
+  background-size: cover;
   padding: 19px 0 143px;
   color: #fff;
   text-align: center;
-  // filter: blur(5px);
 }
 
 .form-logo {
