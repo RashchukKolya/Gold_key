@@ -1,0 +1,115 @@
+//----HEADER----\\
+
+.header {
+  background-image: url(../images/DSC04437.png);
+  background-size: cover;
+  padding-bottom: 286px;
+}
+
+.container {
+  width: 1120px;
+  margin: auto;
+}
+
+.header__nav {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0 194px;
+}
+
+.header__phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone-number {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 28px;
+}
+
+.btn {
+  width: 206px;
+  height: 48px;
+  background-color: #ffc15e;
+  border-radius: 55px;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.header__text {
+  width: 758px;
+  background: rgba(255, 193, 94, 0.9);
+  position: relative;
+  padding: 35px 44px;
+}
+
+.header__text-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 43px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.header__address {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 340px;
+  background: #000;
+  color: #fff;
+  padding: 12px 32px;
+  top: 138px;
+  box-shadow: 0px 4px 24px rgba(27, 19, 15, 0.7);
+}
+
+.address-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  margin-left: 10px;
+}
+
+//-----SECTION-FORM----\\
+
+.section-form {
+  background: linear-gradient(rgba(32, 23, 89, 0.38),  rgba(32, 23, 89, 0.38)), url(../images/DSC04436.png);
+  background-size: cover;
+  padding: 380px 0;
+  // filter: blur(5px);
+}
+
+//------GOOGLE-NAV-------\\
+
+.google-nav {
+  background-image: url(../images/image.png);
+  background-size: cover;
+  padding: 266px 0;
+}
+
+//------FOOTER------\\
+
+.footer {
+  background: rgba(183, 183, 183, 0.2);
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 44px 0;
+}
+
+.footer__address {
+  display: flex;
+}
