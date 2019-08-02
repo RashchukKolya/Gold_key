@@ -708,17 +708,40 @@ input{
   position: relative;
   width: 100%;
   left: -40%;
+  @media only screen and (max-width: 768px) {
+    left: -85%;
+  }
 }
 
 .gallery_title{
   text-align: center;
   margin: 70px 0;
+  @media only screen and (max-width: 768px) {
+    font-size: 20px;
+    margin: 20px 0;
+  }
 }
 .gallery__item{
   padding: 0px 50px;
   height: 511px;
   min-width: 60%;
+  @media only screen and (max-width: 768px) {
+    height: 350px;
+    min-width: 90%;
+    padding: 0px 10px;
+  }
+  @media only screen and (max-width: 500px) {
+    height: 300px;
+  }
 }
+
+@media only screen and (max-width: 768px) {
+  .gradient-wrapper{
+    overflow: hidden;
+  }
+
+}
+
 
 .gallery__item img{
   width: 100%;
