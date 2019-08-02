@@ -13,6 +13,9 @@ input{
 .container {
   width: 1120px;
   margin: auto;
+  @media only screen and (max-width: 768px) {
+    width: 320px;
+  }
 }
 
 .header__nav {
@@ -88,43 +91,59 @@ input{
 
 .communications {
   background: #fff;
-}
-
-.comm-title {
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 53px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  padding: 140px 0 50px;
-}
-
-.comm-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
   position: relative;
+  .comm-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 53px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 140px 0 50px;
+  }
+  .comm-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+    .comm-list-item {
+      width: 175px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .communication-text {
+      width: 60%;
+      padding: 20px 20px;
+      font-size: 11px;
+      height: 250px;
+      margin: 0px 12px -171px 128px;
+      line-height: 18px;
+    }
+    .comm-title{
+      font-size: 20px;
+      line-height: 30px;
+      padding: 20px 0;
+    }
+    .comm-list {
+      flex-direction: column;
+      .comm-list-item {
+        width: 100%;
+        .item-img {
+          width: 60px;
+          margin: 10px auto;
+        }
+        .item-text {
+          font-size: 18px;
+          line-height: 10px;
+          text-align: center;
+          margin: 20px 0 30px;
+        }
+      }
+    }
+  }
 }
 
-.comm-list-item {
-  width: 175px;
-}
-
-.item-img {
-  margin: auto;
-}
-
-.item-text {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 28px;
-  line-height: 33px;
-  text-align: center;
-  margin-bottom: 137px;
-}
 
 .section-form {
   position: relative;
@@ -148,26 +167,51 @@ input{
 
 //-----SECTION-DESCRIPTION-----\\
 
-.description-section{
+.description-section {
   position: relative;
   height: 750px;
   width: 100%;
-  h2{
+  @media only screen and (max-width: 768px) {
+    height: 900px;
+    div {
+      .form-title {
+        font-size: 32px;
+      }
+    }
+    ul{
+      margin: 50px auto;
+      width: 90%;
+      li{
+        font-size: 12px;
+        margin-bottom: 15px;
+        line-height: 16px;
+        .pointer {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+    img{
+      width: 400px;
+      height: 350px;
+    }
+  }
+  h2 {
     text-align: center;
   }
-  ul{
+
+  ul {
     margin-top: 70px;
     width: 70%;
     margin-bottom: 50px;
-    li{
+
+    li {
       font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
       font-size: 18px;
       line-height: 21px;
       margin-bottom: 25px;
       color: #1B130F;
-      .pointer{
+      .pointer {
         width: 16px;
         height: 16px;
         border-radius: 50px;
@@ -177,11 +221,13 @@ input{
       }
     }
   }
-  .button-wrapper{
+
+  .button-wrapper {
     width: 100%;
     margin-left: 20%;
   }
-  img{
+
+  img {
     //width: 100%;
     position: absolute;
     bottom: 0;
@@ -392,10 +438,31 @@ input{
   padding: 19px 0 143px;
   color: #fff;
   text-align: center;
+  @media only screen and (max-width: 768px) {
+    padding: 0 0 50px;
+    .form-title {
+      font-size: 20px;
+    }
+    .form-subtitle {
+      margin: 20px auto;
+      font-size: 14px;
+      width: 100%;
+      padding: 10px 15px;
+    }
+    .form-input {
+      width: 90%;
+      padding: 10px 21px;
+      font-size: 14px;
+      margin: 4% auto;
+    }
+  }
 }
 
 .form-logo {
   margin-bottom: 156px;
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 50px;
+  }
 }
 
 .form-title {
@@ -454,8 +521,26 @@ input{
   justify-content: space-between;
   align-items: center;
   padding: 44px 0;
-}
-
-.footer__address {
-  display: flex;
+  .footer__address {
+    display: flex;
+  }
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    .header__logo {
+      width: 100px;
+    }
+    .footer__address {
+      font-size: 12px;
+      padding: 10px 15px;
+      img{
+        width: 20px;
+      }
+      width: 100%;
+    }
+    .header__phone{
+      .phone-number{
+        font-size: 16px;
+      }
+    }
+  }
 }
