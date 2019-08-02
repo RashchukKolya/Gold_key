@@ -42,6 +42,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+  box-shadow: 0px 4px 20px rgba(207, 164, 97, 0.862);
 }
 
 .header__text {
@@ -110,6 +111,49 @@
   font-size: 28px;
   line-height: 33px;
   text-align: center;
+}
+
+//-----SECTION-DESCRIPTION-----\\
+
+.description-section{
+  position: relative;
+  height: 750px;
+  width: 100%;
+  h2{
+    text-align: center;
+  }
+  ul{
+    margin-top: 70px;
+    width: 70%;
+    margin-bottom: 50px;
+    li{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 25px;
+      color: #1B130F;
+      .pointer{
+        width: 16px;
+        height: 16px;
+        border-radius: 50px;
+        background: #B86020;
+        display: inline-block;
+        margin-right: 15px;
+      }
+    }
+  }
+  .button-wrapper{
+    width: 100%;
+    margin-left: 20%;
+  }
+  img{
+    //width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 //-----SECTION-BUILDING----\\
