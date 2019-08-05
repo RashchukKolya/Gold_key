@@ -44,7 +44,8 @@ input {
 .header__phone {
   background-color: #000;
   color: #fff;
-  padding: 30px;
+  padding: 20px;
+  box-shadow: 0 4px 24px rgba(27,19,15,.7);
 }
 
 .phone-number {
@@ -57,6 +58,7 @@ input {
     margin-bottom: 8px;
     font-size: 14px;
     line-height: 17px;
+    text-align: center;
   }
 }
 
@@ -97,7 +99,7 @@ input {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   @media (max-width: 768px) {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 29px;
   }
 }
@@ -254,6 +256,10 @@ input {
         .pointer {
           width: 12px;
           height: 12px;
+        }
+
+        &:nth-child(7), &:nth-child(8) {
+          width: 100%;
         }
       }
     }
@@ -694,7 +700,7 @@ input {
       img {
         width: 20px;
       }
-      width: 100%;
+      width: 85%;
     }
 
     .header__phone {
