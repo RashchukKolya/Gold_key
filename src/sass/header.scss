@@ -658,6 +658,9 @@ input{
   top: 0;
   z-index: 1;
   background: linear-gradient(90deg,rgba(255,255,255,.81) 61.66%,rgba(255,255,255,.21) 100%);
+  @media only screen and (max-width: 768px) {
+    width: 20px;
+  }
 }
 
 .gallery::after{
@@ -669,7 +672,10 @@ input{
   right: 0;
   top: 0;
   z-index: 1;
-  background: linear-gradient(90deg,rgba(255,255,255,.21) 61.66%,rgba(255,255,255,.81) 100%)
+  background: linear-gradient(90deg,rgba(255,255,255,.21) 61.66%,rgba(255,255,255,.81) 100%);
+  @media only screen and (max-width: 768px) {
+    width: 20px;
+  }
 }
 
 
@@ -695,6 +701,10 @@ input{
   cursor: pointer;
   user-select: none;
   outline: none;
+  @media only screen and (max-width: 768px) {
+    width: 50px;
+    object-fit: contain;
+  }
 }
 
 .gallery__nav .left{
